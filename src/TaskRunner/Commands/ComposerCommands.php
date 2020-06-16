@@ -31,7 +31,7 @@ class ComposerCommands extends AbstractCommands
     ];
 
     /**
-     * Install one or more modules.
+     * Runs composer install.
      *
      * @param array $options
      *   The command line options.
