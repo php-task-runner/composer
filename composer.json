@@ -1,0 +1,46 @@
+{
+    "name": "php-task-runner/composer",
+    "description": "Provides Composer commands for OpenEuropa Task Runner",
+    "keywords": ["task-runner"],
+    "type": "library",
+    "require": {
+        "php": "~7.1",
+        "ext-json": "*",
+        "consolidation/robo": "^1.4.11",
+        "openeuropa/task-runner": "^1.0.0-beta6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7 || ~8 || ~9",
+        "slevomat/coding-standard": "~6",
+        "squizlabs/php_codesniffer": "~3",
+        "composer/composer": "^1"
+    },
+    "license": "EUPL-1.2",
+    "authors": [
+        {
+            "name": "Claudiu Cristea",
+            "email": "clau.cristea@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TaskRunner\\Composer\\": "./src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TaskRunner\\Composer\\Tests\\": "./tests/src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./tests/fixtures/dependency"
+        }
+    ]
+}
