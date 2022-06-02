@@ -4,9 +4,8 @@
     "keywords": ["task-runner"],
     "type": "library",
     "require": {
-        "php": "~7.1",
+        "php": ">=7.4",
         "ext-json": "*",
-        "consolidation/robo": "^1.4.11",
         "openeuropa/task-runner": "^1.0.0-beta7 || ^2.0"
     },
     "require-dev": {
