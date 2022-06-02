@@ -6,14 +6,14 @@ namespace TaskRunner\Composer\TaskRunner\Commands;
 
 use OpenEuropa\TaskRunner\Commands\AbstractCommands;
 use Robo\Collection\CollectionBuilder;
-use Robo\Task\Composer\loadTasks;
+use Robo\Task\Composer\Tasks;
 
 /**
  * Provides Composer commands.
  */
 class ComposerCommands extends AbstractCommands
 {
-    use loadTasks;
+    use Tasks;
 
     /**
      * Options to be used with most of Composer commands.
